@@ -6,7 +6,7 @@ file_path = 'used_cars.csv'
 data = pd.read_csv(file_path)
 car_models = data['model'].unique()
 st.title("Car Price Prediction App")
-st.title(itz me again, anchor=None, *, help=None)
+
 car_model = st.selectbox("Select Car Model", car_models)
 car_age = st.number_input("Enter Car Age", min_value=0, max_value=50, value=5)
 encoded_model = pd.factorize([car_model])[0][0] 
